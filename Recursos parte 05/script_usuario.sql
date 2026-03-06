@@ -11,7 +11,7 @@ insert into Rol(Nombre) values
 
 insert into Usuario(IdRol,NombreCompleto,Correo,NombreUsuario,Clave) values
 (1,'Jose Mendez','codigo@gmail.com','jmendez',
-'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3')
+'123456')
 
 
 --procedimientos rol
@@ -123,3 +123,4 @@ begin
 
 
 end
+
