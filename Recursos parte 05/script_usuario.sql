@@ -9,9 +9,9 @@ insert into Rol(Nombre) values
 ('Ventas')
 
 
-insert into Usuario(IdRol,NombreCompleto,Correo,NombreUsuario,Clave,ResetearClave) values
+insert into Usuario(IdRol,NombreCompleto,Correo,NombreUsuario,Clave) values
 (1,'Jose Mendez','codigo@gmail.com','jmendez',
-'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',0)
+'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3')
 
 
 --procedimientos rol
@@ -120,5 +120,6 @@ begin
   NombreUsuario = @NombreUsuario,
   Activo = @Activo
   where IdUsuario = @IdUsuario
+
 
 end
