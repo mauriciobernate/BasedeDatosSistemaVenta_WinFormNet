@@ -7,8 +7,6 @@ create table Medida(
 IdMedida int primary key identity(1,1),
 Nombre varchar(50) not null,
 Abreviatura varchar(4) not null,--und - kg
-Equivalente varchar(4) not null,--und - g
-Valor int not null --1, 1000
 )
 
 go
@@ -45,7 +43,6 @@ NombreCompleto varchar(50) not null,
 Correo varchar(50) not null,
 NombreUsuario varchar(50) not null unique,
 Clave varchar(100) not null,
-ResetearClave bit default 1,
 Activo bit default 1
 )
 go
@@ -85,9 +82,7 @@ RUC varchar(20),
 Direccion varchar(100),
 Celular varchar(10),
 Correo varchar(30),
-SimboloMoneda varchar(5),
-NombreLogo varchar(100),
-UrlLogo varchar(200)
+SimboloMoneda varchar(5)
 )
 
 go
